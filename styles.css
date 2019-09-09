@@ -1,299 +1,91 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
-/*header = source sans pro*/
-/*numbers = source sans pro semi bold*/
-/*titles = source sans pro light*/
-#header1, #header2{
-  font-size: 30pt;
-  display: inline;
-  font-family: 'Source sans pro', sans-serif;
-  font-weight:normal;
-  color: #4d4f53;
-}
-#depositAmount{
-  font-size: 35pt;
-  width: 230px;
-  border: none;
-  color: #d95e00;
-  font-family: 'Source sans pro', sans-serif;
-  font-weight:600
-}
+<!DOCTYPE html>
+<html lang="en">
+<script type = "text/javascript" src = "calculatorFunctions.js"></script>
+<link rel = "stylesheet" href = "styles.css" type = "text/css">
 
-::placeholder{
-  font-size: 30pt;
-  color: #d95e00;
-
-}
-
-.header{
-  display: inline;
-}
-
-.currencyinput {
-  border: 0 inset #ccc;
-  border-width:
-  font-size: 30pt;
-  color: #d95e00;
-  font-family: 'Source sans pro', sans-serif;
-  font-weight:600
-}
+<head>
+  <div class = "header">
+      <p id = "header1"> With your deposit of &nbsp;
+        <span class = "currencyinput">$</span><input type="text" id = "depositAmount" onkeyup = "saveInput();changingIDs();javascript:this.value=Comma(this.value)" placeholder = "Enter Amount"</input>
+      &nbsp; Beneficial State Bank can lend*:</p>
+      <p id = "depositJS"></p>
+  </div>
+</head>
 
 
-#depositJS{
-  display: none;
-}
+<body>
+  <!-- affordable housing -->
+  <img id = "affordable_housing_img" src = "https://lh3.googleusercontent.com/HnEDxeXdxc0n56asfzy7697DryeisLzafbiKV3eU3TfHQSh3XHPqGusmAxKnkv6kbRxII70v80qTv8t_BNclRM0hZb62BONPx3mZujHuVUPfQPGBYu9OgG8sJ__9jPS_aqPH-kVsX43mZx1hedm0ZyQ90nSO5EJbuRR7STvfZNR-mLuCH-FRvRqnlShF2HasuHtRALrfig9TYKgIx1S5C3mx1WCpzS2suUYNaN0ItgNeIeJOZIyc8q4jHXeO-dN9V9FG9FF6KQtS4w6l0FZffl0bZE87Vr24T0LWyxWl6zHKTi4khpL6LUnMcuAAPe0uLdZZHdmb7xV-n1d_nKkQk8ysUaHdy3qMkOmDmx5bgyPEBHi12vtuGYxm2KGDfGCgbg01lIdHQvdkZk82NVp84Ph0VFnBMzituoxzGkFoL1WWjzrCdWmXb6xSgi9gWfAlUQdJAWZ-EZiTHkAcjaTP3Yf39koxvONrP9iJi_auuOr6MKkNqZJz-S8FC-phDpSsXSUIwIn6dM-e_-fOhsjQgdatGfXQCeLw25Ga7-W6fPs8pKtRX3MU-Y4blgzQe7rOu8JcKhs12ds4HiYluaFv8rLS4GcdqpDiP25PUgQ=w2316-h1486">
+  <p id = "affordable_housing_p">Affordable Housing </p>
+  <h3 id = "affordable_housing_cost">$0</h3>
 
-/*------------------------------------------LEFT-----------------------*/
-#affordable_housing_img, #small_business_img, #health_wellbeing_img, #healthy_foods_img{
-  position: relative;
-  float: left;
-  height: 110px;
-  width: 110px;
-  left: 110px;
-  margin-bottom: 10px;
-}
+   <div class = "clear"></div>
+  <!-- small business -->
+  <img id = "small_business_img" src = "https://lh3.googleusercontent.com/Hx8PsP9LFWrCIF0MSS3rgOmNpdJyJpg0qBA-J9US-39h4Z970n4MgNs0RYz6Y1rJXG-YcTgNweC0g59e4Sz4KMHpvxoE2OViDLsOhGypG2rKpmFii9cn8V4MIRQv7F3DwwZq5kK2nSt9q4Iq4RQBd-Gx0Q6lAUc1lEUSwal63SvkphEhDF9cSNmSqhPG2ahdA9mhO5GWhReJ64YsMdhK_I-LENmgll-twjdyu3WZbWcX48ix3FKxEBwC1phH-Zs_7zg3zzx5c-vgdbnsjhmgJckp4jFCF22SpaxlCQuFZY954Xo9D4GtYlLEBEryFOXtwVn2oIUDAc4-EGdsnvH3pxwJmUzyZsf2x4H_jBp6z3VvQrcpAdZpmdXHuhCwwQ7l3f235sFdRuZzquVKECV3ZYFRAdrBA3OHDs4G5sJzMEIQUB16wm5_kme5rkZPqpGNRMzZ3tzWFGB4tEWnU6TbdNcU1nX233soFC174m8P4CJhyDnxFVfTf1ifNEfYZ_D-YjSXC1-XVj2ByMCSnN5G2ESkqW2d-L9ZnoJjMtlb20HYt0rl1b6KAVx_JZ1zhE4t3rX94Lyjfi3VnxtlMROltiu8EoslxR3Z3E1ePuFTU31V_wnPuFT6mebTK5gpOJp2=w2456-h1350">
+  <p id = "small_business_p"> Small Business & Local <br> Economic Development </p>
+  <h3 id = "small_business_cost">$0</h3>
 
-#affordable_housing_p, #small_business_p, #health_wellbeing_p, #healthy_foods_p{
-  position: relative;
-  left: 130px;
-  font-family: 'Source sans pro',sans-serif;
-  font-size: 16pt;
-  font-weight:lighter;
-  color:#4d4f53;
-}
+  <div class = "clear"></div>
+  <!-- health & wellbeing -->
+  <img id = "health_wellbeing_img" src = "https://lh4.googleusercontent.com/D8oqep8s1jEB2Sms2OH9kButb1qV1bbXkveCmAZ_izfb652icwJfGvz-o0w=w2400">
+  <p id = "health_wellbeing_p"> Health & Wellbeing</p>
+  <h3 id = "health_wellbeing_cost">$0</h3>
 
-#small_business_cost, #health_wellbeing_cost, #healthy_foods_cost{
-  position: relative;
-  font-size: 25pt;
-  left: 140px;
-  font-family:'Source Sans Pro', sans-serif;
-  font-weight:bolder;
-  margin-bottom: 10px;
-}
+  <div class = "clear"></div>
+  <!-- healthy foods-->
+  <img id = "healthy_foods_img" src = "https://lh3.googleusercontent.com/DL4aeFO7x--37Eurv032hYiI3yqy8fFe44Q8hZh2QozA2s2ux4tjKeEceYQ_ACpHX1EaQR5H5BtpsLuBqt_TCtLnC0Njlc435pvJMDHjTDHq5fyAQi1JIrj7bUGBNrG3vxd96OuLzjvsvbr7_ICM5AAO5XNJntrd8SDmgm23QRtNoDhM7ZpeTt-qiBsan0AHm1z9Zz4NgFUD16VQCs_h7q31IKwtt0T-C4cTeeWQ84HjAtwykfse8kNP72p7jsyQsOB_nsBxi-4_kMJEoPeSKSU78tHXRq1g--SeREfGpjs6SeN8rmJMp-IUwaz7GHU5SdBKz_8NP73oNEApSXXdWCKCzPfQkQ2z02Zng3HLTyHJtSwg2iB8Mvtdq1O12hrktprw_T11VQ-ymfkUZswT6T_mZE5UR4dwFb22viDQD3Cg-JT-J9MANGtm3YTq0FkZKZUIRYzgBT4HBA__e4jelT7muq4pRO19YA3CRKsVHT86XEP5hYLrBc9tyxA_85Tx4Q-N5XpLXkLTQt3yp8ikLVqp9dcuyLwMpH757_k47bnhp5Udi_YMGaeX6VWKudGy33YqiUzxS4Dtf1cmzJOrkuIS6BlK94a5QhprDO2OT-_lv9LYVg9C8MVvAGCDZqV-=w2456-h1350">
+  <p id = "healthy_foods_p"> Healthy Foods </p>
+  <h3 id = "healthy_foods_cost">$0</h3>
+  <div class = "clear"></div>
+  <!-- ----------------------------------- MIDDLE ------------------------------------ -->
+  <!-- environmental sustainability -->
+  <img id = "environmental_img" src = "https://lh3.googleusercontent.com/sG-CNuyl4Z1MmmhfSlvmfk-Fj-oUbHIV-COxhCekspRVtA3DhHRB83DYY0E=w2400">
+  <p id = "environmental_p"> Environmental <br> Sustainability </p>
+  <h3 id = "environmental_cost">$0</h3>
+  <div class = "clear"></div>
+  <!-- Beneficial Financial Services -->
+  <img id = "beneficial_financial_img" src = "https://lh3.googleusercontent.com/RyKZsBOo6XyDYkpzkX8_EPsIbQI6mqQ4t_J9WEwVy68gbk_A0sY3bIa1BF0=w2400">
+  <p id = "beneficial_financial_p"> Beneficial Financial <br> Services </p>
+  <h3 id = "beneficial_financial_cost">$0</h3>
+  <div class = "clear"></div>
+  <!-- Education -->
+  <img id = "education_img" src = "https://lh4.googleusercontent.com/ZbhMei4UptbNMNg51MOM_MnYaO4AnqQeA_A5HfoNP9pWYd9IUHq04as_B6M=w2400">
+  <p id = "education_p"> Education & Youth <br> Development </p>
+  <h3 id = "education_cost">$0</h3>
+  <div class = "clear"></div>
+  <!-- Social Justice -->
+  <img id = "social_img" src = "https://lh6.googleusercontent.com/tqRzIrlnk5mwi9gbnBTqzR8cqK6dXXaL-hv_90z4-zRsONcY8HmDi2LMjJA=w2400">
+  <p id = "social_p"> Social Justice </p>
+  <h3 id = "social_cost">$0</h3>
+  <div class = "clear"></div>
+  <!-- Auto -->
+  <img id = "auto_img" src = "https://lh6.googleusercontent.com/u-DB125IquUsAaumsE2tCScNNPlDwZbLL_9x0gsclDulbovEnL8vda0hJiI=w2400">
+  <p id = "auto_p"> Pre-Prime Auto Loans </p>
+  <h3 id = "auto_cost">$0</h3>
+  <div class = "clear"></div>
+  <!-- Arts -->
+  <img id = "arts_img" src = "https://lh5.googleusercontent.com/0VPHSOFcgZpTm1ONNGK8syaQ99hqi4DMFsVXbfDOOSD2vAdpCBG09EZgrwo=w2400">
+  <p id = "arts_p"> Arts, Culture & <br> Community Building </p>
+  <h3 id = "arts_cost">$0</h3>
+  <div class = "clear"></div>
+  <!-- Making -->
+  <img id = "making_img" src = "https://lh5.googleusercontent.com/SNzcblXTSjPkch3HX-weZeWVeIHUzm7mpmOZJ3UeKhUFQ53EPF9ELF5ALhU=w2400">
+  <p id = "making_p"> Making, Manufacturing, <br> Production </p>
+  <h3 id = "making_cost">$0</h3>
+  <div class = "clear"></div>
+  <!-- Other -->
+  <img id = "other_img" src = "https://lh3.googleusercontent.com/hVZLdaksmmUD_Dgh4UNOxsZji4uUk5InmLjJ5ar6073p6t_FFAf4gYVFWYc=w2400">
+  <p id = "other_p"> Other Mission Organizations</p>
+  <h3 id = "other_cost">$0</h3>
+  <div class = "clear"></div>
+  <!-- acorn logo -->
+  <!--<img id = "acorn_logo" src = "https://lh6.googleusercontent.com/BpNtu8OwYUNVzqatowK_OWoErNScVTQTE2lLupUMeFG913r4Qp_B-ekrkQsprJ61uheVgwtw6A0=w2400">-->
+  <!-- bank logo -->
+  <img id = "bank_logo" src = "https://lh4.googleusercontent.com/nSJ1iHoquRnCrHmnqyLU8rWELV1JDY4OcsVlDy7zLGGb0hQ-yHcqx-hPZVKhmrr6IIB0gsiZm5g=w2400">
+  <!-- FDIC thingie -->
+  <!--<img id = "FDIC" src = "https://lh5.googleusercontent.com/dGfTkGUAHBLlwO_W665xGF4tbqEHbMMLdyDkW90xcn-sWvKJWfd8On6rbwqQfJ8aI3qM54TRFzE=w2400">-->
 
-#affordable_housing_cost{
-  position: relative;
-  font-size: 25pt;
-  left: 250px;
-  font-family:'Source Sans Pro', sans-serif;
-  font-weight:bolder;
-  margin-bottom: 10px;
-}
-/*Affordable Housing */
-#affordable_housing_img{
-  top: 100px;
-}
+  <p id = "footnote"> *Numbers based on June 30, 2018 mission metrics </p>
+</body>
 
-#affordable_housing_p{
-  top: 40px;
-}
-
-#affordable_housing_cost{
-  top: 20px;
-}
-/* Small Business */
-#small_business_img{
-  top: 80px;
-}
-
-#small_business_p{
-  top: 80px;
-}
-
-#small_business_cost{
-  top: 60px;
-}
-/*Health & Wellbeing*/
-#health_wellbeing_img{
-  top: 120px;
-}
-
-#health_wellbeing_p{
-  top: 120px;
-}
-
-#health_wellbeing_cost{
-  top: 100px;
-}
-/* Healthy Foods */
-#healthy_foods_img{
-  top: 160px;
-}
-
-#healthy_foods_p{
-  top: 160px;
-}
-
-#healthy_foods_cost{
-  top: 140px;
-}
-/*------------------------------------------MIDDLE-----------------------*/
-#environmental_img, #beneficial_financial_img, #education_img, #social_img{
-  float: left;
-  position: relative;
-  height: 110px;
-  width: 110px;
-  left: 500px;
-  margin-bottom: 10px;
-}
-
-#environmental_p, #beneficial_financial_p, #education_p, #social_p{
-  position: relative;
-  left: 520px;
-  font-family: 'source sans pro', sans-serif;
-  font-size: 16pt;
-  font-weight: lighter;
-  color: #4d4f53;
-}
-
-#environmental_cost, #beneficial_financial_cost, #education_cost, #social_cost{
-  position: relative;
-  font-size: 25pt;
-  left: 530px;
-  font-family: 'Source sans pro', sans-serif;
-  font-weight:bolder;
-  margin-bottom: 10px;
-}
-
-/*environmental*/
-#environmental_img{
-  top: -490px;
-}
-
-#environmental_p{
-  top: -490px;
-}
-
-#environmental_cost{
-  top: -510px;
-}
-/*beneficial financial*/
-#beneficial_financial_img{
-  top: -470px;
-}
-
-#beneficial_financial_p{
-  top: -470px;
-}
-
-#beneficial_financial_cost{
-  top: -490px;
-}
-/*education*/
-#education_img{
-  top: -430px;
-}
-#education_p{
-  top: -430px;
-}
-#education_cost{
-  top: -450px;
-}
-/*social*/
-#social_img{
-  top: -415px;
-}
-#social_p{
-  top: -415px;
-}
-#social_cost{
-  top: -435px;
-}
-/*------------------------------------------RIGHT-----------------------*/
-#auto_img, #arts_img, #making_img, #other_img{
-  float: left;
-  position: relative;
-  height: 110px;
-  width: 110px;
-  left: 870px;
-  margin-bottom: 10px;
-}
-
-#auto_p, #arts_p, #making_p, #other_p{
-  position: relative;
-  left: 880px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size:16pt;
-  font-weight:lighter;
-  color: #4d4f53;
-}
-
-#auto_cost, #arts_cost, #making_cost, #other_cost{
-  position: relative;
-  font-size: 25pt;
-  left: 890px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bolder;
-  margin-bottom: 10px;
-}
-/*auto*/
-#auto_img{
-  top: -1060px;
-}
-
-#auto_p{
-  top: -1060px;
-}
-
-#auto_cost{
-  top: -1080px;
-}
-/*arts*/
-#arts_img{
-  top: -1020px;
-}
-
-#arts_p{
-  top: -1020px;
-}
-
-#arts_cost{
-  top: -1040px;
-}
-/*making*/
-#making_img{
-  top: -980px;
-}
-
-#making_p{
-  top: -980px;
-}
-
-#making_cost{
-  top: -1000px;
-}
-/*other*/
-#other_img{
-  top: -960px;
-}
-
-#other_p{
-  top: -960px;
-}
-
-#other_cost{
-  top: -980px;
-}
-#footnote{
-  position: relative;
-  left: 940px;
-  top: -975px;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #4d4f53;
-  font-size: 10pt;
-}
-
-html,body{
-  width: 100%;
-  height: 100%;
-}
-.clear{
-  clear: left;
-}
-
-#bank_logo{
-  position: relative;
-  height: 69px;
-  width:250px;
-  top: -936px;
-  left: 130px
-}
+</html>
