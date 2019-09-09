@@ -275,8 +275,8 @@
 }
 #footnote{
   position: relative;
-  left: 120px;
-  top: -990px;
+  left: 940px;
+  top: -975px;
   font-family: 'Source Sans Pro', sans-serif;
   color: #4d4f53;
   font-size: 10pt;
@@ -289,18 +289,11 @@ html,body{
 .clear{
   clear: left;
 }
-#acorn_logo{
-  position: relative;
-  height:39.158px;
-  width: 26.49px;
-  top: -954px;
-  left: 1200px;
-}
 
-#FDIC{
+#bank_logo{
   position: relative;
-  height: 27px;
-  width: 340px;
+  height: 69px;
+  width:250px;
   top: -936px;
-  left:80px;
+  left: 130px
 }
