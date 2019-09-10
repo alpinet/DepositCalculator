@@ -292,8 +292,16 @@ html,body{
 
 #bank_logo{
   position: relative;
-  height: 69px;
-  width:250px;
+  height: 64px;
+  width:230px;
   top: -936px;
   left: 130px
+}
+
+#FDIC{
+  position: relative;
+  height: 22px;
+  width: 280px;
+  top:-931px;
+  left: -60px
 }
