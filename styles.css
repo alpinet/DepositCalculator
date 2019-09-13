@@ -92,7 +92,7 @@
 }
 /* Small Business */
 #small_business_img{
-  top: 80px;
+  top: 90px;
 }
 
 #small_business_p{
@@ -104,15 +104,15 @@
 }
 /*Health & Wellbeing*/
 #health_wellbeing_img{
-  top: 120px;
+  top: 110px;
 }
 
 #health_wellbeing_p{
-  top: 120px;
+  top: 110px;
 }
 
 #health_wellbeing_cost{
-  top: 100px;
+  top: 90px;
 }
 /* Healthy Foods */
 #healthy_foods_img{
@@ -132,13 +132,13 @@
   position: relative;
   height: 110px;
   width: 110px;
-  left: 500px;
+  left: 520px;
   margin-bottom: 10px;
 }
 
 #environmental_p, #beneficial_financial_p, #education_p, #social_p{
   position: relative;
-  left: 520px;
+  left: 540px;
   font-family: 'source sans pro', sans-serif;
   font-size: 16pt;
   font-weight: lighter;
@@ -148,7 +148,7 @@
 #environmental_cost, #beneficial_financial_cost, #education_cost, #social_cost{
   position: relative;
   font-size: 25pt;
-  left: 530px;
+  left: 550px;
   font-family: 'Source sans pro', sans-serif;
   font-weight:bolder;
   margin-bottom: 10px;
@@ -156,47 +156,47 @@
 
 /*environmental*/
 #environmental_img{
-  top: -490px;
+  top: -520px;
 }
 
 #environmental_p{
-  top: -490px;
+  top: -530px;
 }
 
 #environmental_cost{
-  top: -510px;
+  top: -560px;
 }
 /*beneficial financial*/
 #beneficial_financial_img{
-  top: -470px;
+  top: -500px;
 }
 
 #beneficial_financial_p{
-  top: -470px;
+  top: -510px;
 }
 
 #beneficial_financial_cost{
-  top: -490px;
+  top: -530px;
 }
 /*education*/
 #education_img{
-  top: -430px;
+  top: -480px;
 }
 #education_p{
-  top: -430px;
+  top: -490px;
 }
 #education_cost{
-  top: -450px;
+  top: -520px;
 }
 /*social*/
 #social_img{
-  top: -415px;
+  top: -455px;
 }
 #social_p{
-  top: -415px;
+  top: -455px;
 }
 #social_cost{
-  top: -435px;
+  top: -475px;
 }
 /*------------------------------------------RIGHT-----------------------*/
 #auto_img, #arts_img, #making_img, #other_img{
@@ -204,13 +204,13 @@
   position: relative;
   height: 110px;
   width: 110px;
-  left: 870px;
+  left: 890px;
   margin-bottom: 10px;
 }
 
 #auto_p, #arts_p, #making_p, #other_p{
   position: relative;
-  left: 880px;
+  left: 910px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size:16pt;
   font-weight:lighter;
@@ -220,63 +220,63 @@
 #auto_cost, #arts_cost, #making_cost, #other_cost{
   position: relative;
   font-size: 25pt;
-  left: 890px;
+  left: 920px;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bolder;
   margin-bottom: 10px;
 }
 /*auto*/
 #auto_img{
-  top: -1060px;
+  top: -1138px;
 }
 
 #auto_p{
-  top: -1060px;
+  top: -1138px;
 }
 
 #auto_cost{
-  top: -1080px;
+  top: -1158px;
 }
 /*arts*/
 #arts_img{
-  top: -1020px;
+  top: -1085px;
 }
 
 #arts_p{
-  top: -1020px;
+  top: -1100px;
 }
 
 #arts_cost{
-  top: -1040px;
+  top: -1120px;
 }
 /*making*/
 #making_img{
-  top: -980px;
+  top: -1070px;
 }
 
 #making_p{
-  top: -980px;
+  top: -1080px;
 }
 
 #making_cost{
-  top: -1000px;
+  top: -1110px;
 }
 /*other*/
 #other_img{
-  top: -960px;
+  top: -1045px;
 }
 
 #other_p{
-  top: -960px;
+  top: -1045px;
 }
 
 #other_cost{
-  top: -980px;
+  top: -1065px;
 }
 #footnote{
   position: relative;
   left: 940px;
-  top: -975px;
+  top: -1075px;
   font-family: 'Source Sans Pro', sans-serif;
   color: #4d4f53;
   font-size: 10pt;
@@ -294,7 +294,7 @@ html,body{
   position: relative;
   height: 64px;
   width:230px;
-  top: -925px;
+  top: -1025px;
   left: 130px
 }
 
@@ -302,6 +302,6 @@ html,body{
   position: relative;
   height: 22px;
   width: 280px;
-  top:-940px;
+  top:-1040px;
   left: 300px
 }
