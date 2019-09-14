@@ -305,3 +305,8 @@ html,body{
   top:-1040px;
   left: 300px
 }
+
+.page-wrap{
+  margin: 0 auto;
+  position: relative;
+}
