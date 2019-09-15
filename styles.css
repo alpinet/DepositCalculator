@@ -80,31 +80,31 @@
 }
 /*Affordable Housing */
 #affordable_housing_img{
-  top: 11vh;
+  top: 100px;
 }
 
 #affordable_housing_p{
-  top: 4.4vh;
+  top: 40px;
 }
 
 #affordable_housing_cost{
-  top: 2.2vh;
+  top: 20px;
 }
 /* Small Business */
 #small_business_img{
-  top: 9.9vh;
+  top: 90px;
 }
 
 #small_business_p{
-  top: 8.8vh;
+  top: 80px;
 }
 
 #small_business_cost{
-  top: 6.6vh;
+  top: 60px;
 }
 /*Health & Wellbeing*/
 #health_wellbeing_img{
-  top: 12.1vh;
+  top: 110px;
 }
 
 #health_wellbeing_p{
@@ -112,19 +112,19 @@
 }
 
 #health_wellbeing_cost{
-  top: 9.9vh;
+  top: 90px;
 }
 /* Healthy Foods */
 #healthy_foods_img{
-  top: 17.6vh;
+  top: 160px;
 }
 
 #healthy_foods_p{
-  top: 17.6vh;
+  top: 160px;
 }
 
 #healthy_foods_cost{
-  top: 15.4vh;
+  top: 140px;
 }
 /*------------------------------------------MIDDLE-----------------------*/
 #environmental_img, #beneficial_financial_img, #education_img, #social_img{
@@ -156,27 +156,27 @@
 
 /*environmental*/
 #environmental_img{
-  top: -56vh;
+  top: -520px;
 }
 
 #environmental_p{
-  top: -56.5vh;
+  top: -530px;
 }
 
 #environmental_cost{
-  top: -59.5vh;
+  top: -560px;
 }
 /*beneficial financial*/
 #beneficial_financial_img{
-  top: -53vh;
+  top: -500px;
 }
 
 #beneficial_financial_p{
-  top: -54vh;
+  top: -510px;
 }
 
 #beneficial_financial_cost{
-  top: -56.5vh;
+  top: -530px;
 }
 /*education*/
 #education_img{
@@ -294,8 +294,8 @@ html,body{
   position: relative;
   height: 64px;
   width:230px;
-  top: -109vh;
-  left: 130px;
+  top: -1025px;
+  left: 130px
 }
 
 #FDIC{
