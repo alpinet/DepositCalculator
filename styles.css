@@ -2,6 +2,11 @@
 /*header = source sans pro*/
 /*numbers = source sans pro semi bold*/
 /*titles = source sans pro light*/
+
+.wrapper{
+  position: absolute;
+  margin: 0 auto;
+}
 #header1, #header2{
   font-size: 30pt;
   display: inline;
@@ -251,7 +256,7 @@
 }
 /*making*/
 #making_img{
-  top: -1070px;
+  top: -1075px;
 }
 
 #making_p{
